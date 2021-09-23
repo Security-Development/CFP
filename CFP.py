@@ -19,13 +19,13 @@ arrHoDir = [
 
 app = {
 "app.py": """
-import flask from Flask
+from flask import Flask
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return <h1>Hello, Flask!!</h1>
+    return "<h1>Hello, Flask!!</h1>"
 
 app.run(host="localhost", port=5000)
 """
